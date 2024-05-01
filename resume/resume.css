@@ -29,6 +29,11 @@ body{
     font-size: 14px;
     font-weight: 500;
 }
+
+span{
+    color: #ff3d00;
+}
+
 .img-area{
     width: 200px;
     height: 200px;
