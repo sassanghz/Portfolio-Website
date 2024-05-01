@@ -28,13 +28,7 @@ img{
 .wrapper .icon.linkedin{
     position: relative;
 }
-.wrapper .icon.facebook{
-    position: relative;
-}
-.wrapper .icon.instagram{
-    position: relative;
-}
-.wrapper .icon.youtube{
+.wrapper .icon.leetcode{
     position: relative;
 }
 .wrapper .icon.linkedin .tooltip{
@@ -44,21 +38,8 @@ img{
     transform: translate(-50%, -50%);
     text-align: center;
 }
-.wrapper .icon.instagram .tooltip{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-.wrapper .icon.youtube .tooltip{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-.wrapper .icon.facebook .tooltip{
+
+.wrapper .icon.leetcode .tooltip{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -72,31 +53,19 @@ img{
     transform: translate(-50%, -50%);
     text-align: center;
 }
-.wrapper .icon.instagram a{
-    display: inline-block;
-}
-.wrapper .icon.instagram ion-icon{
-    font-size: 30px;
-}
-.wrapper .icon.youtube a{
-    display: inline-block;
-}
-.wrapper .icon.youtube ion-icon{
-    font-size: 30px;
-    color: red;
-}
+
 .wrapper .icon.linkedin a{
     display: inline-block;
 }
 .wrapper .icon.linkedin ion-icon{
     font-size: 30px;
 }
-.wrapper .icon.facebook a{
+.wrapper .icon.leetcode a{
     display: inline-block;
 }
-.wrapper .icon.facebook ion-icon{
+.wrapper .icon.leetcode ion-icon{
     font-size: 30px;
-    color: #3B5999;
+    color: darkgoldenrod;
 }
 .wrapper .icon.github a{
     display: inline-block;
@@ -169,21 +138,12 @@ img{
 .wrapper .icon:hover .tooltip{
     box-shadow: 0 -1px 0px rgba(0,0,0,0.4);
 }
-.wrapper .facebook:hover span,
-.wrapper .facebook:hover .tooltip,
-.wrapper .facebook:hover .tooltip:before{
-    background: #3B5999;
+.wrapper .leetcode:hover span,
+.wrapper .leetcode:hover .tooltip,
+.wrapper .leetcode:hover .tooltip:before{
+    background: darkgoldenrod;
 }
-.wrapper .youtube:hover span,
-.wrapper .youtube:hover .tooltip,
-.wrapper .youtube:hover .tooltip:before{
-    background: red;
-}
-.wrapper .instagram:hover span,
-.wrapper .instagram:hover .tooltip,
-.wrapper .instagram:hover .tooltip:before{
-    background: #e1306c;
-}
+
 .wrapper .linkedin:hover span,
 .wrapper .linkedin:hover .tooltip,
 .wrapper .linkedin:hover .tooltip:before{
