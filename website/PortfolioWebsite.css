@@ -23,9 +23,11 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-footer .social_icon{
+footer .social_icon,
+footer .menu{
     position: relative;
     display: flex;
     justify-content: center;
@@ -34,11 +36,13 @@ footer .social_icon{
     flex-wrap: wrap;
 }
 
-footer .social_icon li{
+footer .social_icon li,
+footer .menu li{
     list-style: none;
 }
 
-footer .social_icon li a{
+footer .social_icon li a,
+footer .menu li a{
     font-size: 2em;
     color: 000;
     margin: 0 10px;
