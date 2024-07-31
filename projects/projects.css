@@ -32,7 +32,7 @@ body{
 }
 .img-area{
     width: 200px;
-    height: 200px;
+    text-align: center;
     border-radius: 50%;
     overflow: hidden;
     margin: 25px auto;
