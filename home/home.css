@@ -12,6 +12,16 @@
 .home-text{
     width:550px;
 }
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #ff3d00;
+    color: white;
+    text-align: center;
+}
 .main{
     width: 1130px;
     max-width: 95%;

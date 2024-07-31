@@ -30,6 +30,16 @@ body{
     cursor: pointer;
     border-radius: 10px;
 }
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #ff3d00;
+    color: white;
+    text-align: center;
+}
 .img-area{
     width: 200px;
     text-align: center;
