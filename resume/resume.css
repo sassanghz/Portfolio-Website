@@ -30,6 +30,16 @@ body{
     font-weight: 500;
 }
 
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #ff3d00;
+    color: white;
+    text-align: center;
+}
+
 span{
     color: #ff3d00;
 }
