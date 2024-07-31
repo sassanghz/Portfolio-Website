@@ -14,44 +14,14 @@ body{
     justify-content: flex-end;
     align-items: flex-end;
 }
-footer{
-    position: relative;
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
     width: 100%;
-    background: #ff3d00;
-    min-height: 100px;
-    padding: 20px 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-footer .social_icon,
-footer .menu{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
-    flex-wrap: wrap;
-}
-
-footer .social_icon li,
-footer .menu li{
-    list-style: none;
-}
-
-footer .social_icon li a,
-footer .menu li a{
-    font-size: 2em;
-    color: 000;
-    margin: 0 10px;
-    display: inline-block;
-    transition: 0.5%;
-}
-
-footer .social_icon li a:hover{
-    transform: translateY(-10px);
+    background-color: #ff3d00;
+    color: white;
+    text-align: center;
 }
 nav{
     display: flex;
