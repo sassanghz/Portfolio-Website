@@ -6,22 +6,20 @@
     <link rel="stylesheet" href="PortfolioWebsite.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
-   
+</head>
 <body>
     <div class="Website">
         <nav>
             <h2 class="logo">My<span>Port</span>folio</h2>
             <div class="menu">
-                <form>
-                    <ul>
-                        <li><a href="./../home/home.html" class="icon">Home</a></li>
-                        <li><a href="./../resume/resume.html" class="icon">Resume</a></li>
-                        <li><a href="./../projects/projects.html" class="icon">Projects</a></li>
-                        <li><a href="./../contact/contact.html" class="icon">Contact</a></li> 
-                        <li><a href="./../social/social.html" class="icon">Social</a></li>
-                        <!--<li><a href="./../admin/admin.html" class="icon">Admin</a></li>-->
-                    </ul>
-                </form>
+                <ul>
+                    <li><a href="./../home/home.html" class="icon">Home</a></li>
+                    <li><a href="./../resume/resume.html" class="icon">Resume</a></li>
+                    <li><a href="./../projects/projects.html" class="icon">Projects</a></li>
+                    <li><a href="./../contact/contact.html" class="icon">Contact</a></li> 
+                    <li><a href="./../social/social.html" class="icon">Social</a></li>
+                    <!--<li><a href="./../admin/admin.html" class="icon">Admin</a></li>-->
+                </ul>
             </div>
         </nav>
 
@@ -30,8 +28,8 @@
             <h1>Sassan Ghazi</h1>
             <h3>I am a <span>Computer Science</span> student</h3>
             <div class="newsletter">
-                <form>
-                    <input type="email" name="email" id="mail" placeholder="Enter your email">
+                <form id="emailForm">
+                    <input type="email" name="email" id="mail" placeholder="Enter your email" required>
                     <input type="submit" name="submit" value="Welcome">
                 </form>
             </div>    
@@ -47,7 +45,7 @@
                     headers: {
                         'Content-Type': 'application/json',
                     },
-                    body: JSON.stringify({ email: email}),
+                    body: JSON.stringify({ email: email }),
                 })
                 .then(response => response.json())
                 .then(data => {
