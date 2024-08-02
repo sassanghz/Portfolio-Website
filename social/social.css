@@ -1,42 +1,44 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-html, body{
+
+html, body {
     display: grid;
     height: 100%;
     width: 100%;
     place-items: center;
-    color: #fff; 
+    color: #fff;
     background-image: url("portfolio.png");
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-attachment: fixed; /* Add this line */
 }
 
-.wrapper{
+.wrapper {
     text-align: center;
     position: relative;
 }
-.wrapper .icon{
+
+.wrapper .icon {
     display: inline-block;
     margin: 20px;
 }
-img{
-    margin-top: 50px;
-}
-.wrapper .icon.github{
+
+.wrapper .icon.github {
     position: relative;
 }
-.wrapper .icon.linkedin{
+
+.wrapper .icon.linkedin {
     position: relative;
 }
-.wrapper .icon.leetcode{
+
+.wrapper .icon.leetcode {
     position: relative;
 }
-.wrapper .icon.linkedin .tooltip{
+
+.wrapper .icon.linkedin .tooltip {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -44,14 +46,7 @@ img{
     text-align: center;
 }
 
-.wrapper .icon.leetcode .tooltip{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-.wrapper .icon.github .tooltip{
+.wrapper .icon.leetcode .tooltip {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -59,27 +54,40 @@ img{
     text-align: center;
 }
 
-.wrapper .icon.linkedin a{
+.wrapper .icon.github .tooltip {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.wrapper .icon.linkedin a {
     display: inline-block;
 }
-.wrapper .icon.linkedin ion-icon{
+
+.wrapper .icon.linkedin ion-icon {
     font-size: 30px;
 }
-.wrapper .icon.leetcode a{
+
+.wrapper .icon.leetcode a {
     display: inline-block;
 }
-.wrapper .icon.leetcode ion-icon{
+
+.wrapper .icon.leetcode ion-icon {
     font-size: 30px;
     color: darkgoldenrod;
 }
-.wrapper .icon.github a{
+
+.wrapper .icon.github a {
     display: inline-block;
 }
 
-.wrapper .icon.github ion-icon{
+.wrapper .icon.github ion-icon {
     font-size: 30px;
 }
-.wrapper .icon{
+
+.wrapper .icon {
     margin: 80px;
     cursor: pointer;
     display: flex;
@@ -90,28 +98,31 @@ img{
     z-index: 2;
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.wrapper .icon span{
+
+.wrapper .icon span {
     height: 60px;
     width: 60px;
     display: block;
     text-align: center;
     background: #fff;
     border-radius: 50%;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
-.wrapper .icon:hover span i{
-    color: #fff;
 
+.wrapper .icon:hover span i {
+    color: #fff;
 }
-.wrapper .icon span i{
+
+.wrapper .icon span i {
     line-height: 60px;
     font-size: 25px;
 }
-.wrapper .icon .tooltip{
+
+.wrapper .icon .tooltip {
     font-size: 20px;
     padding: 10px 18px;
     background: #fff;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     border-radius: 25px;
     opacity: 0;
     color: #fff;
@@ -122,14 +133,16 @@ img{
     transform: translate(-50%, -50%);
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.wrapper .icon:hover .tooltip{
+
+.wrapper .icon:hover .tooltip {
     opacity: 1;
     pointer-events: auto;
     top: 50%;
-    transform: translate(-50%, -50%)translateY(-20px);
+    transform: translate(-50%, -50%) translateY(-20px);
     transition: 0.5s;
 }
-.wrapper .icon .tooltip::before{
+
+.wrapper .icon .tooltip::before {
     content: '';
     position: absolute;
     height: 15px;
@@ -139,23 +152,26 @@ img{
     left: 50%;
     transform: translateX(-50%) rotate(45deg);
 }
+
 .wrapper .icon:hover span,
-.wrapper .icon:hover .tooltip{
-    box-shadow: 0 -1px 0px rgba(0,0,0,0.4);
+.wrapper .icon:hover .tooltip {
+    box-shadow: 0 -1px 0px rgba(0, 0, 0, 0.4);
 }
+
 .wrapper .leetcode:hover span,
 .wrapper .leetcode:hover .tooltip,
-.wrapper .leetcode:hover .tooltip:before{
+.wrapper .leetcode:hover .tooltip::before {
     background: darkgoldenrod;
 }
 
 .wrapper .linkedin:hover span,
 .wrapper .linkedin:hover .tooltip,
-.wrapper .linkedin:hover .tooltip:before{
+.wrapper .linkedin:hover .tooltip::before {
     background: #3B5999;
 }
+
 .wrapper .github:hover span,
 .wrapper .github:hover .tooltip,
-.wrapper .github:hover .tooltip:before{
+.wrapper .github:hover .tooltip::before {
     background: #333;
 }
