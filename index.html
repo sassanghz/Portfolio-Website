@@ -19,6 +19,10 @@
                     <li><a href="./../contact/contact.html" class="icon">Contact</a></li> 
                     <li><a href="./../social/social.html" class="icon">Social</a></li>
                 </ul>
+
+                <div class="hamburger" id="hamburger">
+                    &#9776; <!-- This is a simple hamburger icon -->
+                </div>
             </div>
         </nav>
 
@@ -27,7 +31,7 @@
             <h1>Sassan Ghazi</h1>
             <h3>I am a <span>Computer Science</span> student</h3>
             <div class="newsletter">
-                <form action="https://formspree.io/f/xgvwklky" method="POST">
+                <form action="https://formspree.io/f/xgvwklky" method="POST" id="newsletter-form">
                     <input type="email" name="email" id="mail" placeholder="Enter your email" required>
                     <input type="submit" name="submit" value="Welcome">
                 </form>                
@@ -38,5 +42,8 @@
             <p> Copyright © 2024 Sassan Ghazi MyPortfolio - All Rights Reserved.</p>
         </div>
     </div>
+
+    <script src="./script.js"></script>
+
 </body>
 </html>

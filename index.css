@@ -145,8 +145,27 @@ h4{
     }
 }
 
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
 
 @media (max-width: 768px) {
+
+    .hamburger {
+        display: block;
+    }
+
+    #nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    #nav-links.active {
+        display: flex;
+    }
+    
     nav {
         flex-direction: column;
         align-items: flex-start;
