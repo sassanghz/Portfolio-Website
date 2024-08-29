@@ -78,10 +78,6 @@ nav ul li a:hover{
     color: #ff3d00;
     text-align: center;
 }
-.project {
-    text-align: center; /* Center all content within the project class */
-    margin-top: 20px;
-}
 .img-area{
     width: 200px;
     text-align: center;
@@ -92,22 +88,6 @@ nav ul li a:hover{
 }
 .img-area img{
     width: 100%;
-}
-
-.view-project-btn {
-    text-align: center;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: red;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.view-project-btn:hover {
-    background-color: darkred;
 }
 .header{
     text-align: center;
@@ -132,4 +112,16 @@ nav ul li a:hover{
     margin: 20px 0;
     font-size: 18px;
     border-radius: 0 50px 50px 0;
+}
+
+.centered-content {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.centered-content p, .centered-content a {
+    margin: 0;
+    padding: 5px 0;
 }
