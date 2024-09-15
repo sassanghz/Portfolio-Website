@@ -14,7 +14,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     // Check credentials
     if (username === storedUsername && password === storedPassword) {
         alert('Login successful!');
-        window.location.href = 'resume.html'; // Redirect to the resume page
+        window.location.href = './resume.html'; // Redirect to the resume page
     } else {
         alert('Invalid credentials. Please try again.');
     }
