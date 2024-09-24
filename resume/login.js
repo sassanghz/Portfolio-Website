@@ -8,6 +8,8 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const storedPassword = localStorage.getItem('password');
 
     if (username === storedUsername && password === storedPassword) {
+        // set authentication flag
+        sessionStorage.setItem('authenticated', 'true');
         // Redirect to the resume page
         window.location.href = 'resume.html';
     } else {
