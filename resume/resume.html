@@ -16,9 +16,12 @@
 
         gtag('config', 'G-46T58FFQ1H');
 
-        if (!sessionStorage.getItem('authenticated')) {
+        window.onload = function(){
+            if (!sessionStorage.getItem('authenticated')) {
             window.location.href = './login.html'; // Redirect to login if not authenticated
-        }
+            }
+        };
+        
     </script>
 </head>
 <body>
